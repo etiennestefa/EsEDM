@@ -2,9 +2,9 @@
 Assembly Learning Platform
 
 Etienne's Emulated Didactic Machine
-is a didactic instrument to teach easily how our computers do work and most of all how we can make them work better!
+is a didactic instrument to easily teach how processors do work and most of all how we can make them work better!
 
-Read more to understand why!
+Read more to understand why, Come Inside EsEDM!
 
 # EsEDM ISA
 
