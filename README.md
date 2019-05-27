@@ -196,7 +196,7 @@ EsEDM includes a 16384 locations-made memory where
 - Loc 16382 is reserved for Keyboard Status
 - Loc 16383 is reserved for Keyboard Data
 
-#EsEDM Pipeline
+# EsEDM Pipeline
 
 While running EsEDM follows this pipeline:
 
@@ -204,5 +204,30 @@ While running EsEDM follows this pipeline:
 - Step Two: Decoding the instruction and setting service registers
 - Step Three/Four: Aritmetic or Logic operation / Memory interface
 - Step Five: Storing the result
+
+# Compiling EsEDM
+
+EsEDM is realised on CodeBlock using wxwidgets 3.0 libraries that allow the program to be ran on all the main OSs and can easily be compiled using g++.
+
+# Using EsEDM
+
+EsEDM allows users to:
+
+- Call the Assembler (assembler in the same directory and xterm needed). Key 'A',
+- Load a program. Key 'L'
+- Run a program (not to be used with I programs). Key 'R'
+- Run a program one instruction per time. Key 'N'
+
+# Enjoying EsEDM
+
+EsEDM may be a good didactic platform thanks to its easy commands, language and ISA:
+
+- The assemblative process can be followed or even hand-made
+- It can be used as a good platform to develop embrional high level languages
+- It can be used to improve low level abilities
+
+What are you waiting for? Try Etienne's Emulated Didactic Machine!
+
+
 
 
