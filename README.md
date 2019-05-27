@@ -130,7 +130,7 @@ Assemblative process takes two steps to prouce the output.
 
 - Step Two: Jump instructions are poperly linked with their label.
 
-The step one process can be saved putting flag -ws
+The step one process can be saved putting flag -ws that does save the EsEDMISAssemblerWorkSpace.edmws
 
 # Compile EsEDMISAssembler
 
@@ -149,3 +149,53 @@ Programmers can run the assebler in thrree ways:
 - ./EsEDMISAssembler source.edmisa output.edmexe
 
 - ./EsEDMISAssembler -flag source.edmisa output.edmexe
+
+# EsEDM
+
+EsEDM is the virtual machine that is able to build programs, run them and show machine's status in real time.
+
+It is made of:
+
+- 8 main registers
+
+- 5 service registers
+
+- 16384 memory locations (I/O included)
+
+# EsEDM Registers
+
+EsEDM has 8 main registers:
+
+
+- R0	Coded as: 000 
+- R1	Coded as: 001 
+- R2	Coded as: 010 
+- R3	Coded as: 011 
+- FP	Coded as: 100 Frame Pointer
+- SP	Coded as: 101 Stack Pointer
+- PC	Coded as: 110 Program Counter
+- IR	Coded as: 111 Instruction Register
+
+# EsEDM Service Registers
+
+- RA Operand One
+- RB Operand Two
+- RC Memory Location's Index
+- RY Operation's Result Destination
+- RZ Operation's Result
+
+# EsEDM Memory and I/O 
+
+EsEDM includes a 16384 locations-made memory where
+
+- From Loc 0 to Program Length the program is loaded
+- Loc 16378 is reserved for Display Control (NOT EMULATED)
+- Loc 16379 is reserved for Display Status
+- Loc 16380 is reserved for Display Data
+- Loc 16381 is reserved for Keyboard Control (NOT EMULATED)
+- Loc 16382 is reserved for Keyboard Status
+- Loc 16383 is reserved for Keyboard Data
+
+
+
+
