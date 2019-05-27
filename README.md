@@ -113,9 +113,9 @@ Programmers are also allowed to use all of the 8 main 16 bits sized registers co
   
  -  Ternary instruction with immediate value:
 
-  Operative code followed by 0 Register One Register Two Two's complement of the immediate value
+   Operative code followed by 0 Register One Register Two Two's complement of the immediate value
 
-  example: Sbt-R1-R2-#-1#! turns into 0110 0 001 010 11111
+   example: Sbt-R1-R2-#-1#! turns into 0110 0 001 010 11111
 
 
 # EsEDMISAssembler
