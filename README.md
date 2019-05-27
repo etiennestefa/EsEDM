@@ -196,6 +196,13 @@ EsEDM includes a 16384 locations-made memory where
 - Loc 16382 is reserved for Keyboard Status
 - Loc 16383 is reserved for Keyboard Data
 
+#EsEDM Pipeline
 
+While running EsEDM follows this pipeline:
+
+- Step One: Loading the instruction in the Instruction Register and setting the Program Counter
+- Step Two: Decoding the instruction and setting service registers
+- Step Three/Four: Aritmetic or Logic operation / Memory interface
+- Step Five: Storing the result
 
 
