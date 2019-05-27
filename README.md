@@ -67,7 +67,7 @@ Programmers are also allowed to use all of the 8 main 16 bits sized registers co
 
   example: Mov-R1-R2!
 
-or
+- or
 
   Instruction '-' Register One '-#' Immediate Value between 127 and -128 '#!'
 
@@ -79,7 +79,7 @@ or
 
   example: Add-R1-R2-R3!
 
-or
+- or
 
   Instruction '-' Register One '-' Register Two '-#' Immediate Value between 127 and -128 '#!'
 
