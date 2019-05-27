@@ -51,37 +51,72 @@ Programmers are also allowed to use all of the 8 main 16 bits sized registers co
 
 - Labels
 
-Programmers can define a label putting label's name between '<' and '>'.
-example: <LABEL>
+  Programmers can define a label putting label's name between '<' and '>'.
+
+  example: <LABEL>
   
 - Branch
 
-To make a branch programmers just need to write the jump instruction followed by '-(', label's name and then ')!'.
-example: Bra-(LABEL)!
+  To make a branch programmers just need to write the jump instruction followed by '-(', label's name and then ')!'.
+  
+  example: Bra-(LABEL)!
 
 - Binary instructions such as Mov, Not, Ldr, Str, Cmp have to be written this way:
 
-Instruction '-' Register One '-' Register Two '!'
+  Instruction '-' Register One '-' Register Two '!'
 
-example: Mov-R1-R2!
+  example: Mov-R1-R2!
 
 or
 
-Instruction '-' Register One '-#' Immediate Value between 127 and -128 '#!'
+  Instruction '-' Register One '-#' Immediate Value between 127 and -128 '#!'
 
-example: Not-R1-#7#!
+  example: Not-R1-#7#!
 
 - Ternary Instructions such as Add, Adi, Sbt, Sbi, And have to be written this way:
 
-Instruction '-' Register One '-' Register Two '-' Register Three '!'
+  Instruction '-' Register One '-' Register Two '-' Register Three '!'
 
-example: Add-R1-R2-R3!
+  example: Add-R1-R2-R3!
 
 or
 
-Instruction '-' Register One '-' Register Two '-#' Immediate Value between 127 and -128 '#!'
+  Instruction '-' Register One '-' Register Two '-#' Immediate Value between 127 and -128 '#!'
 
-example: Sbt-R1-R1-#7#!
+  example: Sbt-R1-R1-#7#!
+
+# How to Assemble by yourself
+
+- Jump instructions:
+
+  Operative code followed by destination's two's complement
+
+  example: Bra-(LABEL)! turns into  1000 xxxxxxxxxxx
+
+- Binary instruction without immediate value:
+
+  Operative code followed by 1 Register One Register Two 00
+
+  example: Mov-R1-R2! turns into 0000 1 001 010 00000
+
+- Binary instruction with immediate value:
+
+  Operative code followed by 0 Register One Two's complement of the immediate value
+
+  example: Not-R3-#1#! turns into 0001 0 011 00000001
+
+-  Ternary instruction without immediate value:
+
+  Operative code followed by 1 Register One Register Two Register Three 00
+
+  example: Add-R1-R2-R3! turns into 0100 1 001 010 011 00
+  
+ -  Ternary instruction with immediate value:
+
+  Operative code followed by 0 Register One Register Two Two's complement of the immediate value
+
+  example: Sbt-R1-R2-#-1#! turns into 0110 0 001 010 11111
+
 
 # EsEDMISAssembler
 
