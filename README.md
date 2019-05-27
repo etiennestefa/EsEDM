@@ -62,21 +62,25 @@ example: Bra-(LABEL)!
 - Binary instructions such as Mov, Not, Ldr, Str, Cmp have to be written this way:
 
 Instruction '-' Register One '-' Register Two '!'
+
 example: Mov-R1-R2!
 
 or
 
 Instruction '-' Register One '-#' Immediate Value between 127 and -128 '#!'
+
 example: Not-R1-#7#!
 
 - Ternary Instructions such as Add, Adi, Sbt, Sbi, And have to be written this way:
 
 Instruction '-' Register One '-' Register Two '-' Register Three '!'
+
 example: Add-R1-R2-R3!
 
 or
 
 Instruction '-' Register One '-' Register Two '-#' Immediate Value between 127 and -128 '#!'
+
 example: Sbt-R1-R1-#7#!
 
 # EsEDMISAssembler
