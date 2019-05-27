@@ -113,11 +113,39 @@ Programmers are also allowed to use all of the 8 main 16 bits sized registers co
   
  -  Ternary instruction with immediate value:
 
-   Operative code followed by 0 Register One Register Two Two's complement of the immediate value
+  Operative code followed by 0 Register One Register Two Two's complement of the immediate value
 
-   example: Sbt-R1-R2-#-1#! turns into 0110 0 001 010 11111
+  example: Sbt-R1-R2-#-1#! turns into 0110 0 001 010 11111
 
 
 # EsEDMISAssembler
 
-EsEDMISAssembler is [...] Work in progress!
+EsEDMISAssembler is a C++ and Haskell based assembler.
+
+It is able to find, identify and show to programmers errors.
+
+Assemblative process takes two steps to prouce the output.
+
+- Step One: Instructions, registers and immediate values are translated ad labels are inserted in a buffer.
+
+- Step Two: Jump instructions are poperly linked with their label.
+
+The step one process can be saved putting flag -ws
+
+# Compile EsEDMISAssembler
+
+- ghc -c -XForeignFunctionInterface -O EsEDMISAFunctions.hs
+
+- g++ -c -O EsEDMISAssembler.cpp -I "/usr/lib/ghc/include/"
+
+- ghc -no-hs-main EsEDMISAFunctions.o EsEDMISAssembler.o -lstdc++
+
+# Using EsEDMISAssembler
+
+Programmers can run the assebler in thrree ways:
+
+- ./EsEDMISAssembler source.edmisa
+
+- ./EsEDMISAssembler source.edmisa output.edmexe
+
+- ./EsEDMISAssembler -flag source.edmisa output.edmexe
