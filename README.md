@@ -1,4 +1,4 @@
-# EsEDM
+# [EsEDM](#esedm-isa)
 Assembly Learning Platform
 
 Etienne's Emulated Didactic Machine
