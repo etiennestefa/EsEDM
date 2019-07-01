@@ -1,10 +1,22 @@
-# [EsEDM](#esedm-isa)
+# EsEDM
 Assembly Learning Platform
 
 Etienne's Emulated Didactic Machine
 is a didactic instrument to easily teach how processors do work and most of all how we can make them work better!
 
 Read more to understand why, Come Inside EsEDM!
+
+# MENU
+
+  
+- [EsEDM ISA](#esedm-isa)
+- [EsEDM ISA Assemblative Language](#esedm-isa-assemblative-language)
+- [How to write a well-made code](#how-to-write-a-well-made-code)
+- [How to assemble by yourself](#how-to-assemble-by-yourself)
+- [EsEDMISAssembler](#esedmisassembler)
+  
+  
+
 
 # EsEDM ISA
 
@@ -85,7 +97,7 @@ Programmers are also allowed to use all of the 8 main 16 bits sized registers co
 
   example: Sbt-R1-R1-#7#!
 
-# How to Assemble by yourself
+# How to assemble by yourself
 
 - Jump instructions:
 
