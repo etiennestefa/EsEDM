@@ -12,7 +12,7 @@ Read more to understand why, Come Inside EsEDM!
 - [How to write a well-made code](#how-to-write-a-well-made-code)
 - [How to assemble by yourself](#how-to-assemble-by-yourself)
 - [EsEDMISAssembler](#esedmisassembler)
-- [Haskell's role in making EsEDMISAssembler](#haskell-s-role-in-making-esedmisassembler)
+- [Haskell's role in making EsEDMISAssembler](#haskells-role-in-making-esedmisassembler)
 - [Compiling EsEDMISAssembler](#compiling-esedmisassembler)
 - [Using EsEDMISAssembler](#using-esedmisassembler)
 - [EsEDM](#esedm)
