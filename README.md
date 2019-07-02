@@ -149,6 +149,42 @@ Assemblative process takes two steps to prouce the output.
 
 The step one process can be saved putting flag -ws that does save the EsEDMISAssemblerWorkSpace.edmws
 
+# Haskell's role in making EsEDMISAssembler
+
+The main goal of an assembler is to translate a list of instructions from a easily-human-understanding language to machine's language.
+
+EsEDMISA translation can be seen as a function:
+
+f : A -> B
+
+where:
+
+A is composed by all the well written instruction in EsESEDMISA language
+B is composed by all the possible instruction in EsEDMISA
+
+what's more, if we consider the instruction: 
+
+i = ADD-R1-R2-R3!
+
+f(i) can be seen as
+
+f(i) = g(ADD) + p(R3) + h(R1) + h(R2) + h(R3)
+
+where:
+
+g is the function that returns the operative code of an instruction
+p returns 1 if the argument is a register, else returns 0
+h returns the code of the register given
+
+it is easy now to understand that function f may be easily turned into the sum of many elementary functions.
+
+But why Haskell is useful now ?
+
+Haskell is a functional language, so defining "mathematical" functions is easier than in other imperative languages.
+
+In addition, there is no need to make the assembler totally in Haskell but it is easy to link Haskell's functions to other programs made in other languages using flag "-XForeignFunctionInterface" as shown in the next paragraph.
+
+
 # Compiling EsEDMISAssembler
 
 - ghc -c -XForeignFunctionInterface -O EsEDMISAFunctions.hs
