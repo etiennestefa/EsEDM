@@ -1,5 +1,4 @@
-# EsEDM
-Assembly Learning Platform
+# EsEDM Assembly Learning Platform
 
 Etienne's Emulated Didactic Machine
 is a didactic instrument to easily teach how processors do work and most of all how we can make them work better!
@@ -14,7 +13,18 @@ Read more to understand why, Come Inside EsEDM!
 - [How to write a well-made code](#how-to-write-a-well-made-code)
 - [How to assemble by yourself](#how-to-assemble-by-yourself)
 - [EsEDMISAssembler](#esedmisassembler)
-  
+- [Compiling EsEDMISAssembler](#compiling-esedmisassembler)
+- [Using EsEDMISAssembler](#using-esedmisassembler)
+- [EsEDM](#esedm)
+- [EsEDM Registers](#esedm-registers)
+- [EsEDM Memory and I/O](#esedm-memory-and-i/o)
+- [EsEDM Pipeline](#esedm-pipeline)
+- [Compiling EsEDM](#compiling-esedm)
+- [Using EsEDM](#using-esedm)
+- [Enjoying EsEDM](#enjoying-esedm)
+
+
+
   
 
 
@@ -144,7 +154,7 @@ Assemblative process takes two steps to prouce the output.
 
 The step one process can be saved putting flag -ws that does save the EsEDMISAssemblerWorkSpace.edmws
 
-# Compile EsEDMISAssembler
+# Compiling EsEDMISAssembler
 
 - ghc -c -XForeignFunctionInterface -O EsEDMISAFunctions.hs
 
