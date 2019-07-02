@@ -6,8 +6,7 @@ is a didactic instrument to easily teach how processors do work and most of all 
 Read more to understand why, Come Inside EsEDM!
 
 # MENU
-
-  
+ 
 - [EsEDM ISA](#esedm-isa)
 - [EsEDM ISA Assemblative Language](#esedm-isa-assemblative-language)
 - [How to write a well-made code](#how-to-write-a-well-made-code)
@@ -22,10 +21,6 @@ Read more to understand why, Come Inside EsEDM!
 - [Compiling EsEDM](#compiling-esedm)
 - [Using EsEDM](#using-esedm)
 - [Enjoying EsEDM](#enjoying-esedm)
-
-
-
-  
 
 
 # EsEDM ISA
@@ -249,7 +244,3 @@ EsEDM may be a good didactic platform thanks to its easy commands, language and 
 - It can be used to improve low level abilities
 
 What are you waiting for? Try Etienne's Emulated Didactic Machine!
-
-
-
-
