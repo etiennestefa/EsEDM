@@ -115,25 +115,25 @@ Programmers are also allowed to use all of the 8 main 16 bits sized registers co
 
 - Binary instruction without immediate value:
 
-  Operative code followed by 1 Register One Register Two 00
+  Operative code followed by 1, Register One, Register Two, 00
 
   example: Mov-R1-R2! turns into 0000 1 001 010 00000
 
 - Binary instruction with immediate value:
 
-  Operative code followed by 0 Register One Two's complement of the immediate value
+  Operative code followed by 0, Register One, Two's complement of the immediate value
 
   example: Not-R3-#1#! turns into 0001 0 011 00000001
 
 -  Ternary instruction without immediate value:
 
-  Operative code followed by 1 Register One Register Two Register Three 00
+  Operative code followed by 1, Register One, Register Two, Register Three, 00
 
   example: Add-R1-R2-R3! turns into 0100 1 001 010 011 00
   
  -  Ternary instruction with immediate value:
 
-  Operative code followed by 0 Register One Register Two two's complement of the immediate value
+  Operative code followed by 0, Register One, Register Two, Two's complement of the immediate value
 
   example: Sbt-R1-R2-#-1#! turns into 0110 0 001 010 11111
 
@@ -151,6 +151,8 @@ Assemblative process takes two steps to prouce the output.
 - Step Two: Jump instructions are poperly linked with their label.
 
 The step one process can be saved putting flag -ws that does save the EsEDMISAssemblerWorkSpace.edmws
+
+EsEDMISAssembler is generally a file named a.edmexe where istructions are coded as '0' and '1' characters, an instruction per line. In this way new programmers can easily see and understand assemblative process.
 
 # Haskell's role in making EsEDMISAssembler
 
