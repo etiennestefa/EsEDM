@@ -19,6 +19,8 @@ Read more to understand why, Come Inside EsEDM!
 - [EsEDM Registers](#esedm-registers)
 - [EsEDM Memory and I/O](#esedm-memory-and-io)
 - [EsEDM Pipeline](#esedm-pipeline)
+- [EsEDM Display](#esedm-display)
+- [EsEDM Keyboard](#esedm-keyboard)
 - [Compiling EsEDM](#compiling-esedm)
 - [Using EsEDM](#using-esedm)
 - [Enjoying EsEDM](#enjoying-esedm)
@@ -253,6 +255,8 @@ EsEDM includes a 16384 locations-made memory where
 - Loc 16382 is reserved for Keyboard Status
 - Loc 16383 is reserved for Keyboard Data
 
+Programmer is able to save program's memory at any time thanks to Print Memory button.
+
 # EsEDM Pipeline
 
 While running EsEDM follows this pipeline:
@@ -261,6 +265,20 @@ While running EsEDM follows this pipeline:
 - Step Two: Decoding the instruction and setting service registers
 - Step Three/Four: Aritmetic or Logic operation / Memory interface
 - Step Five: Storing the result
+
+# EsEDM Display
+
+EsEDM includes a 200 chars display that can be used putting the chosen ASCII char into memory location 16380 a.k.a. Display Data and setting memory location Display Status as 4 (bit 2 acts as DOUT signal).
+
+EsEDM Display also simulates a small delay in turning off DOUT signal.
+
+Programmer is able to save program's output at any time thanks to Print Display button.
+
+# EsEDM Keyboard
+
+EsEDM includes also a keyboard. Programmers shall insert the character into the text box and press the Send Key button.
+
+WARNING! Keyboard cannot be used in Run modality!
 
 # Compiling EsEDM
 
@@ -272,7 +290,7 @@ EsEDM allows users to:
 
 - Call the Assembler (assembler in the same directory and xterm needed). Key 'A',
 - Load a program. Key 'L'
-- Run a program (not to be used with I programs). Key 'R'
+- Run a program (not to be used with programs that need Keyboard). Key 'R'
 - Run a program one instruction per time. Key 'N'
 
 # Enjoying EsEDM
