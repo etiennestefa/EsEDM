@@ -173,11 +173,11 @@ f(i) = g(ADD) + p(R3) + h(R1) + h(R2) + h(R3)
 
 where:
 
-g is the function that returns the operative code of an instruction
+- g is the function that returns the operative code of an instruction
 
-p returns 1 if the argument is a register, else returns 0
+- p returns 1 if the argument is a register, else returns 0
 
-h returns the code of the register given
+- h returns the code of the register given
 
 
 it is easy now to understand that function f may be easily turned into the sum of many elementary functions.
