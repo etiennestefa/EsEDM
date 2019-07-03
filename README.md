@@ -17,7 +17,7 @@ Read more to understand why, Come Inside EsEDM!
 - [Using EsEDMISAssembler](#using-esedmisassembler)
 - [EsEDM](#esedm)
 - [EsEDM Registers](#esedm-registers)
-- [EsEDM Memory and I/O](#esedm-memory-and-i/o)
+- [EsEDM Memory and I/O](#esedm-memory-and-io)
 - [EsEDM Pipeline](#esedm-pipeline)
 - [Compiling EsEDM](#compiling-esedm)
 - [Using EsEDM](#using-esedm)
@@ -43,7 +43,7 @@ Programming on EsEDM you are given 16 RISC style commands which are enough for m
 - STR	Operative Code: 0011
 - ADD	Operative Code: 0100
 - ADI	Operative Code: 0101
-- SBT	Operative Code: 011O	
+- SBT	Operative Code: 0110	
 - SBI	Operative Code: 0111
 - BRA	Operative Code: 1000 
 - BEQ	Operative Code: 1001 
@@ -71,13 +71,13 @@ Programmers are also allowed to use all of the 8 main 16 bits sized registers co
 
   Programmers can define a label putting label's name between '<' and '>'.
 
-  example: <LABEL>
+  example: <_LABEL_>
   
 - Branch
 
   To make a branch programmers just need to write the jump instruction followed by '-(', label's name and then ')!'.
   
-  example: Bra-(LABEL)!
+  example: Bra-(_LABEL_)!
 
 - Binary instructions such as Mov, Not, Ldr, Str, Cmp have to be written this way:
 
@@ -131,7 +131,7 @@ Programmers are also allowed to use all of the 8 main 16 bits sized registers co
   
  -  Ternary instruction with immediate value:
 
-  Operative code followed by 0 Register One Register Two Two's complement of the immediate value
+  Operative code followed by 0 Register One Register Two two's complement of the immediate value
 
   example: Sbt-R1-R2-#-1#! turns into 0110 0 001 010 11111
 
