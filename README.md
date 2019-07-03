@@ -203,7 +203,7 @@ In addition, there is no need to make the assembler totally in Haskell but it is
 
 # Using EsEDMISAssembler
 
-Programmers can run the assebler in thrree ways:
+Programmers can run the assembler in three ways:
 
 - ./EsEDMISAssembler source.edmisa
 
