@@ -101,7 +101,7 @@ Programmers are also allowed to use all of the 8 main 16 bits sized registers co
 
 - or
 
-  Instruction '-' Register One '-' Register Two '-#' Immediate Value between 7 and -8 '#!'
+  Instruction '-' Register One '-' Register Two '-#' Immediate Value between 15 and -16 '#!'
 
   example: Sbt-R1-R1-#7#!
 
