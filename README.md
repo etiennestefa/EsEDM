@@ -164,8 +164,8 @@ f : A -> B
 
 where:
 
-A is composed by all the well written instruction in EsESEDMISA language
-B is composed by all the possible instruction in EsEDMISA
+- A is composed by all the well written instruction in EsESEDMISA language
+- B is composed by all the possible instruction in EsEDMISA
 
 what's more, if we consider the instruction: 
 
